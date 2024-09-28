@@ -6,60 +6,60 @@ export default function InstructionsComponent() {
 		<div className={styles.container}>
 			<header className={styles.header_container}>
 				<h1>
-					create<span>-web3-dapp</span>
+					lel<span>-ele-le</span>
 				</h1>
 				<p>
-					Get started by editing this page in{" "}
-					<span>/pages/index.js</span>
+					zonkey's website
+					<span>/pages/idk</span>
 				</p>
 			</header>
 
 			<div className={styles.buttons_container}>
 				<a
 					target={"_blank"}
-					href={"https://createweb3dapp.alchemy.com/#components"}
+					href={"https://r.mtdv.me/articles/fkaPFkkzDi"}
 				>
 					<div className={styles.button}>
 						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
-						<p>Add Components</p>
+						<p>Discord</p>
 					</div>
 				</a>
 				<a
 					target={"_blank"}
-					href={"https://createweb3dapp.alchemy.com/#templates"}
+					href={"https://discord.gg/qbtukq7rHY"}
 				>
 					<div className={styles.button}>
 						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
-						<p>Explore Templates</p>
+						<p>Github</p>
 					</div>
 				</a>
 				<a
 					target={"_blank"}
-					href={"https://docs.alchemy.com/docs/create-web3-dapp"}
+					href={"https://github.com/John142-dot"}
 				>
 					<div className={styles.button}>
 						<img
-							src="https://static.alchemyapi.io/images/cw3d/Icon%20Large/file-eye-01-l.svg"
+							src="no"
 							width={"20px"}
 							height={"20px"}
 						/>
-						<p>Visit Docs</p>
+						<p>cool site</p>
 					</div>
 				</a>
 			</div>
 			<div className={styles.footer}>
-				<a href="https://alchemy.com/?a=create-web3-dapp" target={"_blank"}>
+				<a href="https://r.mtdv.me/articles/fkaPFkkzDi" target={"_blank"}>
 					<img
 						id="badge-button"
 						style={{ width: "240px", height: "53px" }}
-						src="https://static.alchemyapi.io/images/marketing/badgeLight.png"
-						alt="Alchemy Supercharged"
+						src="nah"
+						alt="idk too"
 					/>
 				</a>
 				<div className={styles.icons_container}>
 					<div>
 						<a
-							href="https://github.com/alchemyplatform/create-web3-dapp"
+							href="https://github.com/John142-dot"
 							target={"_blank"}
 						>
 							Leave a star on Github
@@ -67,10 +67,10 @@ export default function InstructionsComponent() {
 					</div>
 					<div>
 						<a
-							href="https://twitter.com/AlchemyPlatform"
+							href="https://twitter.com/"
 							target={"_blank"}
 						>
-							Follow us on Twitter
+							NO TWITTER!!
 						</a>
 					</div>
 				</div>

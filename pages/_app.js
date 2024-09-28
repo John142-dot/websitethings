@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import "@rainbow-me/rainbowkit/styles.css";
 
-import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { configureChains, createClient, useAccount, WagmiConfig } from "wagmi";
+import { RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
+import { configureChains, createClient, WagmiConfig } from "wagmi";
 import {
   mainnet,
   polygon,
@@ -32,26 +32,18 @@ const { chains, provider } = configureChains(
   [alchemyProvider({ apiKey: process.env.ALCHEMY_API_KEY }), publicProvider()]
 );
 
-const { connectors } = getDefaultWallets({
-  appName: "My Alchemy DApp",
-  chains,
-});
-
+// Removing wallet apps by setting an empty array for connectors
 const wagmiClient = createClient({
   autoConnect: true,
-  connectors,
+  connectors: [], // No wallets will be available
   provider,
 });
 
 export { WagmiConfig, RainbowKitProvider };
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter()
-  const account = useAccount({
-    onConnect({ address, connector, isReconnected }) {
-      if (!isReconnected) router.reload();
-    },
-  });
+  const router = useRouter();
+
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider
@@ -60,6 +52,21 @@ function MyApp({ Component, pageProps }) {
         chains={chains}
       >
         <MainLayout>
+          {/* Custom Connect Wallet Button */}
+          <ConnectButton.Custom>
+            {({ account, openConnectModal, openAccountModal }) => {
+              return account ? (
+                <button onClick={openAccountModal}>
+                  Your Custom Name (Connected)
+                </button>
+              ) : (
+                <button onClick={openConnectModal}>
+                  Your Custom Button Name
+                </button>
+              );
+            }}
+          </ConnectButton.Custom>
+
           <Component {...pageProps} />
         </MainLayout>
       </RainbowKitProvider>

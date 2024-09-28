@@ -1,5 +1,6 @@
 import styles from "../styles/InstructionsComponent.module.css";
-import Router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
+
 export default function InstructionsComponent() {
 	const router = useRouter();
 	return (
@@ -16,43 +17,49 @@ export default function InstructionsComponent() {
 
 			<div className={styles.buttons_container}>
 				<a
-					target={"_blank"}
-					href={"https://r.mtdv.me/articles/fkaPFkkzDi"}
+					target="_blank"
+					rel="noopener noreferrer"
+					href="https://r.mtdv.me/articles/fkaPFkkzDi"
 				>
 					<div className={styles.button}>
-						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
 						<p>Discord</p>
 					</div>
 				</a>
 				<a
-					target={"_blank"}
-					href={"https://discord.gg/qbtukq7rHY"}
+					target="_blank"
+					rel="noopener noreferrer"
+					href="https://discord.gg/qbtukq7rHY"
 				>
 					<div className={styles.button}>
-						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
 						<p>Github</p>
 					</div>
 				</a>
 				<a
-					target={"_blank"}
-					href={"https://github.com/John142-dot"}
+					target="_blank"
+					rel="noopener noreferrer"
+					href="https://github.com/John142-dot"
 				>
 					<div className={styles.button}>
 						<img
-							src="no"
-							width={"20px"}
-							height={"20px"}
+							src="/path-to-your-image.png"
+							width="20px"
+							height="20px"
+							alt="cool site icon"
 						/>
 						<p>cool site</p>
 					</div>
 				</a>
 			</div>
 			<div className={styles.footer}>
-				<a href="https://r.mtdv.me/articles/fkaPFkkzDi" target={"_blank"}>
+				<a
+					href="https://r.mtdv.me/articles/fkaPFkkzDi"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<img
 						id="badge-button"
 						style={{ width: "240px", height: "53px" }}
-						src="nah"
+						src="/path-to-your-image.png"
 						alt="idk too"
 					/>
 				</a>
@@ -60,7 +67,8 @@ export default function InstructionsComponent() {
 					<div>
 						<a
 							href="https://github.com/John142-dot"
-							target={"_blank"}
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							Leave a star on Github
 						</a>
@@ -68,7 +76,8 @@ export default function InstructionsComponent() {
 					<div>
 						<a
 							href="https://twitter.com/"
-							target={"_blank"}
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							NO TWITTER!!
 						</a>
@@ -77,4 +86,4 @@ export default function InstructionsComponent() {
 			</div>
 		</div>
 	);
-}
+			}

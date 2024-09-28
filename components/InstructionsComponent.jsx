@@ -11,7 +11,7 @@ export default function InstructionsComponent() {
 				</h1>
 				<p>
 					zonkey's website
-					<span>/pages/idk</span>
+					<span>/e/idk</span>
 				</p>
 			</header>
 
@@ -19,7 +19,7 @@ export default function InstructionsComponent() {
 				<a
 					target="_blank"
 					rel="noopener noreferrer"
-					href="https://r.mtdv.me/articles/fkaPFkkzDi"
+					href="https://discord.gg/qbtukq7rHY"
 				>
 					<div className={styles.button}>
 						<p>Discord</p>
@@ -28,7 +28,7 @@ export default function InstructionsComponent() {
 				<a
 					target="_blank"
 					rel="noopener noreferrer"
-					href="https://discord.gg/qbtukq7rHY"
+					href="https://github.com/John142-dot"
 				>
 					<div className={styles.button}>
 						<p>Github</p>
@@ -37,7 +37,7 @@ export default function InstructionsComponent() {
 				<a
 					target="_blank"
 					rel="noopener noreferrer"
-					href="https://github.com/John142-dot"
+					href="https://r.mtdv.me/articles/fkaPFkkzDi"
 				>
 					<div className={styles.button}>
 						<img
